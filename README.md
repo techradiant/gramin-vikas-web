@@ -2,4 +2,5 @@
 Gramin Vikas Web application
 
 # Website Templates:
-- [Environmental-Bootstrap](https://techradiant.github.io/gramin-vikas-web/Templates/Ecova-Environmental-Bootstrap-Template/)
+1. [Environmental-Bootstrap](https://techradiant.github.io/gramin-vikas-web/Templates/Ecova-Environmental-Bootstrap-Template/)
+
