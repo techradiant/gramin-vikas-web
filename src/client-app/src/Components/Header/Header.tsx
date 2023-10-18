@@ -125,14 +125,30 @@ function Header() {
                   </ul>
                </div>
             </nav>
+            <img src="./h2-slide1.jpg" alt="Logo" />
          </header>
-         
+         <SearchDiv/>
          </>
 
      )
 
 }
 
+function SearchDiv()
+{
+   return (
+<>
+<div id="search">
+            <button type="button" className="close">×</button>
+            <form className="search-overlay-form">
+               <input type="search" value="" placeholder="type keyword(s) here" />
+               <button type="submit" className="btn btn-primary"><i className="fas fa-search"></i></button>
+            </form>
+         </div>
+</>
+
+   )
+}
 
 
-export default Header; 
+export default Header; SearchDiv;
