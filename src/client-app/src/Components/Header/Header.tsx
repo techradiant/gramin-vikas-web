@@ -1,11 +1,14 @@
 
+import lg from '../../content/images/h2logo.png'
+import pr from '../../content/images/pro.jpg'
+
 
 function Header() {
      return(
          <>
            <header className="header-style-2">
             <nav className="navbar navbar-expand-lg">
-               <a className="navbar-brand" href="index-2.html"><img src="images/h2logo.png" alt=""/></a>
+               <a className="navbar-brand" href="index-2.html"><img src={lg} alt=""/></a>
                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i className="fas fa-bars"></i> </button>
                <div className="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav mr-auto">
@@ -109,7 +112,7 @@ function Header() {
                            Recently added item(s)
                            <ul className="list">
                               <li className="item">
-                                 <a href="#" className="preview-image"><img className="preview" src="images/pro.jpg" alt=""/></a>
+                                 <a href="#" className="preview-image"><img className="preview" src={pr} alt=""/></a>
                                  <div className="description"> <a href="#">Sample Course</a> <strong className="price">1 x $44.95</strong> </div>
                               </li>
                               <li className="item">
@@ -125,30 +128,12 @@ function Header() {
                   </ul>
                </div>
             </nav>
-            <img src="./h2-slide1.jpg" alt="Logo" />
+            
          </header>
-         <SearchDiv/>
+         
          </>
-
      )
 
 }
 
-function SearchDiv()
-{
-   return (
-<>
-<div id="search">
-            <button type="button" className="close">×</button>
-            <form className="search-overlay-form">
-               <input type="search" value="" placeholder="type keyword(s) here" />
-               <button type="submit" className="btn btn-primary"><i className="fas fa-search"></i></button>
-            </form>
-         </div>
-</>
-
-   )
-}
-
-
-export default Header; SearchDiv;
+export default Header;

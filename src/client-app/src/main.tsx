@@ -12,11 +12,12 @@ import './Css/owl.crousel.min.css'
 import './Css/prettyPhoto.css'
 import './Css/responsive.css'
 import './Css/slick.css'
-
+import Slider from '../src/Components/Slider/Slider.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <App />
      <Header/>
+    <Slider/>
   </React.StrictMode>,
 )
