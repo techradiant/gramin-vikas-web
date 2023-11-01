@@ -26,32 +26,36 @@
         <!--Header Start-->
         <header class="header-style-2">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index-2.html"><img src="images/h2logo.png" alt=""></a>
+                <a class="navbar-brand" href="index-2.html"><img src="~/images/h2logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i class="fas fa-bars"></i> </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        @*<li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="index-2.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>
-                        <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">Home</a>
+                        </li>
+                        @*<li class="nav-item dropdown">*@
+                        @*<a class="nav-link dropdown-toggle" href="index-2.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home </a>*@
+                            @*<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index"> Home </a>*@
+                        @*<ul class="dropdown-menu">
                         <li>
-                        <a asp-area="" asp-controller="Home" asp-action="Privacy">Home One</a>
+                        <a asp-area="" asp-controller="Home" asp-action="Home">Home</a>
                         <a href="index-2.html"></a></li>
                         <li><a href="home-two.html">Home Two</a></li>
                         <li><a href="home-three.html">Home Three</a></li>
-                        </ul>
-                        </li>*@
+                        </ul>*@
+                        @*</li>*@
                         <li class="nav-item">
                             <a asp-area="" asp-controller="Home" asp-action="About" class="nav-link">About</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="events-grid.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Events </a>
+                            <a class="nav-link dropdown-toggle" href="events-grid.html" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Panchayat </a>
                             <ul class="dropdown-menu">
-                                <li><a href="events-grid.html">Events Grid</a></li>
-                                <li><a href="events-grid-2.html">Events Grid Two</a></li>
-                                <li><a href="events-grid-3.html">Events Grid Three</a></li>
+                                <li><a asp-area="" asp-controller="Panchayat" asp-action="Index">Rithal Phogat</a></li>
+                                <li><a asp-area="" asp-controller="Panchayat" asp-action="RithalNarwal">Rithal Narwal</a></li>
+                               @* <li><a href="events-grid-3.html">Events Grid Three</a></li>
                                 <li><a href="events-list.html">Events List</a></li>
                                 <li><a href="events-list-two.html">Events List Two</a></li>
-                                <li><a href="event-details.html">Event Details</a></li>
+                                <li><a href="event-details.html">Event Details</a></li>*@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -169,9 +173,9 @@
                         <div class="col-lg-3 col-md-6 col-sm-6">
                             <!--Footer Widget Start-->
                             <div class="footer-widget">
-                                <h4>About Ecova</h4>
+                                <h4>About Rithal</h4>
                                 <p> If anything’s hot in today’s economy, it’s saving money, including a broad range of green businesses helping people save energy, water, and other resources. Definitely, you can go with this business as it is a nothing but the future. </p>
-                                <a href="#" class="lm">About us</a>
+                                <a asp-action="About" asp-controller="Home" class="lm">About us</a>
                             </div>
                             <!--Footer Widget End-->
                         </div>
@@ -195,9 +199,9 @@
                             <div class="footer-widget">
                                 <h4>Latest Posts</h4>
                                 <ul class="lastest-products">
-                                    <li> <img src="images/flp1.jpg" alt=""> <strong><a href="#">How you can keep alive wild animals for...</a></strong> <span class="pdate"><i>Posted:</i> 29 September, 2018</span> </li>
-                                    <li> <img src="images/flp2.jpg" alt=""> <strong><a href="#">Eliminate your plastic bottle pollution & keep...</a></strong> <span class="pdate"><i>Posted:</i> 29 September, 2018</span> </li>
-                                    <li> <img src="images/flp3.jpg" alt=""> <strong><a href="#">How you can keep alive wild animals for...</a></strong> <span class="pdate"><i>Posted:</i> 29 September, 2018</span> </li>
+                                    <li> <img src="~/images/flp1.jpg" alt=""> <strong><a href="#">How you can keep alive wild animals for...</a></strong> <span class="pdate"><i>Posted:</i> 29 September, 2018</span> </li>
+                                    <li> <img src="~/images/flp2.jpg" alt=""> <strong><a href="#">Eliminate your plastic bottle pollution & keep...</a></strong> <span class="pdate"><i>Posted:</i> 29 September, 2018</span> </li>
+                                    <li> <img src="~/images/flp3.jpg" alt=""> <strong><a href="#">How you can keep alive wild animals for...</a></strong> <span class="pdate"><i>Posted:</i> 29 September, 2018</span> </li>
                                 </ul>
                             </div>
                             <!--Footer Widget End-->
@@ -209,7 +213,7 @@
                                     <!--Footer Product Start-->
                                     <div class="item">
                                         <div class="f-product">
-                                            <img src="images/fpro1.jpg" alt="">
+                                            <img src="~/images/fpro1.jpg" alt="">
                                             <div class="fp-text">
                                                 <h6><a href="#">Buy T-Shirts</a></h6>
                                                 <strong>$19.00</strong>
@@ -220,7 +224,7 @@
                                     <!--Footer Product Start-->
                                     <div class="item">
                                         <div class="f-product">
-                                            <img src="images/fpro1.jpg" alt="">
+                                            <img src="~/images/fpro1.jpg" alt="">
                                             <div class="fp-text">
                                                 <h6><a href="#">Buy T-Shirts</a></h6>
                                                 <strong>$19.00</strong>
@@ -231,7 +235,7 @@
                                     <!--Footer Product Start-->
                                     <div class="item">
                                         <div class="f-product">
-                                            <img src="images/fpro1.jpg" alt="">
+                                            <img src="~/images/fpro1.jpg" alt="">
                                             <div class="fp-text">
                                                 <h6><a href="#">Buy T-Shirts</a></h6>
                                                 <strong>$19.00</strong>
@@ -249,7 +253,7 @@
             <div class="footer-copyr wf100">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4 col-sm-4"> <img src="images/logo.png" alt=""> </div>
+                        <div class="col-md-4 col-sm-4"> <img src="~/images/logo.png" alt=""> </div>
                         <div class="col-md-8 col-sm-8">
                             <p>&copy; 2023 - GraminVikas.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
                         </div>
