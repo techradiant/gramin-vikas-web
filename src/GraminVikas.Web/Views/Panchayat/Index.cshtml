@@ -66,51 +66,7 @@
                         </div>
                     </div>
                     <!--Event Box End-->
-                    <!--Event Box Start-->
-                    <div class="event-list-box">
-                        <div class="event-thumb"><img src="~/images/RithalPanchayat/Sh_Ram_Diya_1967_Phogat.jpg" alt=""> </div>
-                        <ul class="event-meta">
-                            <li> <strong>From-Year:</strong> 1967</li>
-                            <li> <strong>To-Year:</strong> 1972</li>
-                            <li> <strong>Father's Name:</strong> Sh. Baj nathl </li>
-                        </ul>
-                        <div class="event-txt">
-                            <h4>Sh. Ram Diya </h4>
-                            <p>"Education, healthcare, infrastructure – these are not just promises but priorities. I will collaborate with all stakeholders to ensure that our village is equipped with the resources it needs to thrive."</p>
-                            @*<a href="#" class="attbtn">Attend Event</a>*@
-                        </div>
-                    </div>
-                    <!--Event Box End-->
-                    <!--Event Box Start-->
-                    <div class="event-list-box">
-                        <div class="event-thumb"> <img src="~/images/RithalPanchayat/Sh_Dariya_Singh_1962_Phogat.jpg" alt=""> </div>
-                        <ul class="event-meta">
-                            <li> <strong>From-Year:</strong>1972</li>
-                            <li> <strong>To-Year:</strong>1982</li>
-                            <li> <strong>Father's Name:</strong> Sh. Juglal </li>
-                        </ul>
-                        <div class="event-txt">
-                            <h4> Sh. Dariya Singh </h4>
-                            <p>"I bring a fresh perspective and a genuine passion for our community. With your support, we can create a village that becomes a role model for others, a place where everyone is proud to call home."</p>
-                            @*<a href="#" class="attbtn">Attend Event</a>*@
-                        </div>
-                    </div>
-                    <!--Event Box End-->
-                    <!--Event Box Start-->
-                    <div class="event-list-box">
-                        <div class="event-thumb"><img src="~/images/RithalPanchayat/Sh_Kansi_Ram_1982_Phogat.jpg" alt=""> </div>
-                        <ul class="event-meta">
-                            <li> <strong>From-Year:</strong> 1982</li>
-                            <li> <strong>To-Year:</strong>1987</li>
-                            <li> <strong>Father's Name:</strong> Shri Ram Pandit </li>
-                        </ul>
-                        <div class="event-txt">
-                            <h4> Sh. Kanshi Ram  </h4>
-                            <p>"Today, I am proud to announce a new initiative aimed at enhancing the infrastructure of our village. With your support, we can create a better future for generations to come."</p>
-                            @*<a href="#" class="attbtn">Attend Event</a>*@
-                        </div>
-                    </div>
-                    <!--Event Box End-->
+                   
                     <!--Event Box Start-->
                     <div class="event-list-box">
                         <div class="event-thumb"><img src="~/images/RithalPanchayat/Sh_Ramher_1987_Phogat.jpg" alt=""> </div>
@@ -144,9 +100,11 @@
                         <div class="side-widget text-widget">
                             <h5>Voter List Phogat</h5>
                            @* <a asp-action="GetPdf" asp-controller="Users">Download</a>*@
-                            <a href="/" class="attbtn" download>Voter List 2</a>
-                            @*<a href="#" class="attbtn">Voter List 3</a>
-                            <a href="#" class="attbtn">Voter List 4</a>*@
+                            <a href="/file/Rithal_Phogat_Voter_List_1.pdf" class="attbtn" download> Download Voter List Phogat 1</a>
+                             <a href="/file/Rithal_Phogat_Voter_List_2.pdf" class="attbtn" download> Download Voter List Phogat 2</a>
+                              <a href="/file/Rithal_Phogat_Voter_List_3.pdf" class="attbtn" download> Download Voter List Phogat 3</a>
+                               <a href="/file/Rithal_Phogat_Voter_List_4.pdf" class="attbtn" download> Download Voter List Phogat 4</a>
+                           
                        @*     <p> We are Ecova: eco &amp; environmental community. We need your support and help to Stop Globar Warning. Few generations ago it to seemed like world’s resources were infinite, and the people needed only to access them to create business, Lorem ipsum dolor it amet consect adipiscing. </p>
                       *@  
                   </div>
@@ -188,7 +146,7 @@
                                 <li class="page-item"> <a class="page-link" href="#" aria-label="Previous"> <i class="fas fa-angle-left"></i> </a> </li>
                                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                                 <li class="page-item "><a class="page-link" asp-controller="Panchayat" asp-action="RithalPhogat">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" asp-controller="Panchayat" asp-action="RithalPhogat3">3</a></li>
                                 <li class="page-item"> <a class="page-link" asp-controller="Panchayat" asp-action="RithalPhogat" aria-label="Next"> <i class="fas fa-angle-right"></i> </a> </li>
                             </ul>
                         </nav>

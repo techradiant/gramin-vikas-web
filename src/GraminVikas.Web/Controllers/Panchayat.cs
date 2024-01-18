@@ -17,5 +17,10 @@ namespace GraminVikas.Web.Controllers
         {
             return View();
         }
+
+        public IActionResult RithalPhogat3()
+        {
+            return View();
+        }
     }
 }
